@@ -25,11 +25,11 @@ int main()
 {
 
     
-    int sum = 0;
-    int n;
+    // int sum = 0;
+    // int n;
 
-    cout << "Enter value n : " << endl;
-    cin >> n;
+    // cout << "Enter value n : " << endl;
+    // cin >> n;
 
     
     
@@ -45,21 +45,20 @@ int main()
     // cout << sum << endl;
     
     
-    for (int i = 0; i < 5 ; i++)
+    for (int i = 0; i < 5 ; i++) // line
     {
-        cout << "************" << endl;
+        int x = 7;
+
+    for (int i = 0; i < x; i++) // printing star
+    {
+        cout << "*";
     }
+        cout << endl;
+    }
+
     
     
-    
-    
-    
-    
-    
-    
-    
-    
- 
+     
  
     return 0;
 } 
