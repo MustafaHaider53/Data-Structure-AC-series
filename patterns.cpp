@@ -221,6 +221,50 @@ int main()
 
 // Q12 homework
 
+    // int n;
+
+    // cout << "Enter value: " << endl;
+    // cin >> n;
+
+    // char var = 64;
+
+    // for (int i = 1; i <= n; i++) // for lines
+    // {        
+    //     for (int j = 1; j <= i; j++) //for print
+    // {
+    //     var++;
+    //     cout << var << " ";
+    // }
+    // cout  << endl;
+    // }
+
+// Q13 reverse with spaces
+
+    // int n;
+
+    // cout << "Enter value: " << endl;
+    // cin >> n;
+
+    // int var = 0;
+
+    // for (int i = 0; i < n; i++) // for lines
+    // {        
+    //     var++;
+
+    //     for (int j = 0; j < i; j++) // print spaces
+    //     {
+    //         cout << " ";          
+    //     }
+
+    //     for (int k = 0; k < n-i; k++)// 
+    //     {
+    //         cout << var;
+    //     }
+    //     cout  << endl;
+    // }
+
+// Q13 reverse with spaces characters
+
     int n;
 
     cout << "Enter value: " << endl;
@@ -228,14 +272,20 @@ int main()
 
     char var = 64;
 
-    for (int i = 1; i <= n; i++) // for lines
+    for (int i = 0; i < n; i++) // for lines
     {        
-        for (int j = 1; j <= i; j++) //for print
-    {
         var++;
-        cout << var << " ";
-    }
-    cout  << endl;
+
+        for (int j = 0; j < i; j++) // print spaces
+        {
+            cout << " ";          
+        }
+
+        for (int k = 0; k < n-i; k++)// 
+        {
+            cout << var;
+        }
+        cout  << endl;
     }
 
     return 0;
