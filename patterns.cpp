@@ -40,13 +40,13 @@ int main()
     cout << "Enter value: " << endl;
     cin >> n;
 
-    char c;
-    cout << "Enter chracter: " << endl;
-    cin >> c;
+    // char c;
+    // cout << "Enter chracter: " << endl;
+    // cin >> c;
 
     for (int i = 1; i <= n; i++) // for lines
     {
-        for (char j = 'A'; j <= c; j++) //for print
+        for (char j = 'A'; j <= n; j++) //for print
     {
         cout << j << " ";
     }
