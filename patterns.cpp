@@ -185,23 +185,55 @@ int main()
 
 // Q10
 
+    // int n;
+
+    // cout << "Enter value: " << endl;
+    // cin >> n;
+
+
+    // for (int i = 1; i < n; i++) // for lines
+    // {        
+    //     for (int j = i; j > 0; j--) //for print
+    // {
+    //     cout << j << " ";
+    // }
+    // cout  << endl;
+    // }
+
+// Q11 Floyd triangle
+
+    // int n;
+
+    // cout << "Enter value: " << endl;
+    // cin >> n;
+
+    // int var = 0;
+
+    // for (int i = 1; i <= n; i++) // for lines
+    // {        
+    //     for (int j = 1; j <= i; j++) //for print
+    // {
+    //     var++;
+    //     cout << var << " ";
+    // }
+    // cout  << endl;
+    // }
+
+// Q12 homework
+
     int n;
 
     cout << "Enter value: " << endl;
     cin >> n;
 
-    
+    char var = 64;
 
-    for (int i = 0; i < n; i++) // for lines
+    for (int i = 1; i <= n; i++) // for lines
+    {        
+        for (int j = 1; j <= i; j++) //for print
     {
-        int var = 0;
-        
-        for (int j = i+1; j <= j-var; j++) //for print
-    {
-        
-        cout << j << " ";
         var++;
-        
+        cout << var << " ";
     }
     cout  << endl;
     }
