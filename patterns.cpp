@@ -37,11 +37,10 @@ int main()
 //Q3
 
     int n;
-
     cout << "Enter value: " << endl;
     cin >> n;
 
-    char c
+    char c;
     cout << "Enter chracter: " << endl;
     cin >> c;
 
