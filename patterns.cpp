@@ -265,28 +265,138 @@ int main()
 
 // Q13 reverse with spaces characters
 
+    // int n;
+
+    // cout << "Enter value: " << endl;
+    // cin >> n;
+
+    // char var = 64;
+
+    // for (int i = 0; i < n; i++) // for lines
+    // {        
+    //     var++;
+
+    //     for (int j = 0; j < i; j++) // print spaces
+    //     {
+    //         cout << " ";          
+    //     }
+
+    //     for (int k = 0; k < n-i; k++)// 
+    //     {
+    //         cout << var;
+    //     }
+    //     cout  << endl;
+    // }
+
+// Q14 pyramid pattern
+    // int n;
+
+    // cout << "Enter value: " << endl;
+    // cin >> n;
+
+    
+
+    // for (int i = 0; i < n; i++) // for lines 
+
+    // {        
+    //     for (int j = 0; j < n-i-1; j++)// for spaces
+    //     {
+    //         cout << " ";
+    //     }
+
+    //     for (int k = 1; k <= i+1; k++)// for 1 half numbers
+    //     {
+    //         cout << k;
+    //     }
+
+    //     for (int l = i; l >= 1; l--)// for 2 half numbers
+    //     {
+    //         cout << l;
+    //     }
+        
+    //     cout << endl;
+        
+    //}
+
+// Q15 hollow diamomd pattern
+
     int n;
 
     cout << "Enter value: " << endl;
     cin >> n;
 
-    char var = 64;
-
-    for (int i = 0; i < n; i++) // for lines
-    {        
-        var++;
-
-        for (int j = 0; j < i; j++) // print spaces
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n-i-1; j++) // for spaces of 1st top half
         {
-            cout << " ";          
+            cout << "-";
         }
 
-        for (int k = 0; k < n-i; k++)// 
+        for (int k = i; k <= i; k++) // for top half triangle star
         {
-            cout << var;
+            cout << "*";
         }
+
+        for (int l = i; l > 0; l--){ // for between spaces
+            cout << "-";
+        }
+
+        for (int m = 0; m < i-1; m++)// for remaning spaces in between
+        {
+            cout << "-";
+        }
+        
+
+        if(i != 0)
+        {
+
+            for (int n = i; n <= i; n++) // for top 2nd half triangle
+            {
+            cout << "*";
+            }
+        }
+        cout << endl;
+        
+    } 
+
+    
+    
+    
+    for (int i = 0; i < n-1; i++)
+    {
+        for (int j = 0; j < i+1 ; j++)// for spaces
+        {
+            cout << "-";
+        }
+
+        for (int k = i; k <= i; k++)// for bottom half left stars
+        {
+            cout << "*";
+        }
+
+        for (int l = 0; l < (n-1)-i-1; l++){ // for between spaces
+            cout << "-";
+        }
+
+        for (int m = 0; m < (n-1)-i-2; m++) //for remaning spaces in between
+        {
+            cout << "-"; 
+        }
+
+        if(i != (n-1)-1){
+
+        for (int n = i; n <= i; n++)// for bottom half right stars
+        {
+            cout << "*";
+        }
+
+        }
+        
+
+        
         cout  << endl;
     }
+    
 
     return 0;
 
