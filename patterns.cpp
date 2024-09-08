@@ -320,84 +320,155 @@ int main()
 
 // Q15 hollow diamomd pattern
 
+    // int n;
+
+    // cout << "Enter value: " << endl;
+    // cin >> n;
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < n-i-1; j++) // for spaces of 1st top half
+    //     {
+    //         cout << "-";
+    //     }
+
+    //     for (int k = i; k <= i; k++) // for top half triangle star
+    //     {
+    //         cout << "*";
+    //     }
+
+    //     for (int l = i; l > 0; l--){ // for between spaces
+    //         cout << "-";
+    //     }
+
+    //     for (int m = 0; m < i-1; m++)// for remaning spaces in between
+    //     {
+    //         cout << "-";
+    //     }
+        
+
+    //     if(i != 0)
+    //     {
+
+    //         for (int n = i; n <= i; n++) // for top 2nd half triangle
+    //         {
+    //         cout << "*";
+    //         }
+    //     }
+    //     cout << endl;
+        
+    // } 
+
+    
+    
+    
+    // for (int i = 0; i < n-1; i++)
+    // {
+    //     for (int j = 0; j < i+1 ; j++)// for spaces
+    //     {
+    //         cout << "-";
+    //     }
+
+    //     for (int k = i; k <= i; k++)// for bottom half left stars
+    //     {
+    //         cout << "*";
+    //     }
+
+    //     for (int l = 0; l < (n-1)-i-1; l++){ // for between spaces
+    //         cout << "-";
+    //     }
+
+    //     for (int m = 0; m < (n-1)-i-2; m++) //for remaning spaces in between
+    //     {
+    //         cout << "-"; 
+    //     }
+
+    //     if(i != (n-1)-1){
+
+    //     for (int n = i; n <= i; n++)// for bottom half right stars
+    //     {
+    //         cout << "*";
+    //     }
+
+    //     }
+        
+
+        
+    //     cout  << endl;
+    // }
+
+// Q16 butterfly pattern
+
     int n;
 
     cout << "Enter value: " << endl;
     cin >> n;
 
-    for (int i = 0; i < n; i++)
+    
+
+    for (int i = 0; i <= n; i = i+2)
     {
-        for (int j = 0; j < n-i-1; j++) // for spaces of 1st top half
-        {
-            cout << "-";
-        }
-
-        for (int k = i; k <= i; k++) // for top half triangle star
-        {
-            cout << "*";
-        }
-
-        for (int l = i; l > 0; l--){ // for between spaces
-            cout << "-";
-        }
-
-        for (int m = 0; m < i-1; m++)// for remaning spaces in between
-        {
-            cout << "-";
-        }
-        
-
-        if(i != 0)
-        {
-
-            for (int n = i; n <= i; n++) // for top 2nd half triangle
-            {
-            cout << "*";
-            }
-        }
-        cout << endl;
-        
-    } 
-
-    
-    
-    
-    for (int i = 0; i < n-1; i++)
-    {
-        for (int j = 0; j < i+1 ; j++)// for spaces
-        {
-            cout << "-";
-        }
-
-        for (int k = i; k <= i; k++)// for bottom half left stars
-        {
-            cout << "*";
-        }
-
-        for (int l = 0; l < (n-1)-i-1; l++){ // for between spaces
-            cout << "-";
-        }
-
-        for (int m = 0; m < (n-1)-i-2; m++) //for remaning spaces in between
-        {
-            cout << "-"; 
-        }
-
-        if(i != (n-1)-1){
-
-        for (int n = i; n <= i; n++)// for bottom half right stars
-        {
-            cout << "*";
-        }
-
-        }
-        
-
-        
-        cout  << endl;
+        cout << i;
     }
     
 
+    // for (int i = 0; i < n/2 ; i++)
+    // {
+    //     for (int j = 0; j < i+1; j++) // star of first half left
+    //     {
+    //         cout << "*";
+    //     }
+
+    //     if(i != (n/2 - 1)){
+    //     for (int k = n-(i+2); k > 0 ; k = k-(i+2)) // spaces in between 1 half
+    //     {
+    //         cout << "-";
+    //     }
+
+    //     for (int l = n-(i+2); l > 0 ; l = l-(i+2)) // spaces in between 2 half
+    //     {
+    //         cout << "-";
+    //     }
+    //     }
+
+    //     for (int m = 0; m < i+1; m++) // star of first half right
+    //     {
+    //         cout << "*";
+    //     }
+
+        
+    //     cout  << endl;
+    // }
+
+
+    // for (int i = n/2; i > 0; i--)
+    // {
+    //     for (int j = 0; j < i; j++) // star of seconf half left
+    //     {
+    //         cout << "*";
+    //     }
+
+    //     if(i != (n/2))
+    // {
+    //     for (int k = n-(i+2); k >= 0 ; k = k-(i+2)) // spaces in between 1 half
+    //     {
+    //         cout << "-";
+    //     }
+
+    //     for (int l = n-(i+2); l >= 0 ; l = l-(i+2)) // spaces in between 2 half
+    //     {
+    //         cout << "-";
+    //     }
+    // }
+
+    //     for (int m = 0; m < i; m++) // star of second half right
+    //     {
+    //         cout << "*";
+    //     }
+
+    //     cout << endl;
+    // }
+    
     return 0;
 
 
