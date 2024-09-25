@@ -7,7 +7,7 @@ int main()
 {
     
 // Brute force approach
-    vector<int> nums = {1,1,1,1,1,1,1,2,2,2,2,2,2,1};
+    vector<int> nums = {2,2,2,3,3,3,4,1,1,1,1,1,1,1};
 
     // for ( int val : nums )
     // {
@@ -31,29 +31,55 @@ int main()
 // optimize approach 
 
     // sorting
-    sort(nums.begin() , nums.end());
+    // sort(nums.begin() , nums.end());
 
-    int freq = 0;
-    int ans = nums[0];
+    // int freq = 0;
+    // int ans = nums[0];
+
+    // for (int i = 0; i < nums.size(); i++)
+    // {
+    //     if(nums[i] == nums[i-1]){
+    //         ans = nums[i];
+    //         freq++;
+    //     }
+    //     else{
+            
+    //         freq = 1;
+    //     }
+
+    //     if(freq > (nums.size()) / 2){
+    //         cout << ans << endl;
+    //         break;
+    //     }
+    // }
+
+// moores algorithm
+
+    int freq = 0 ;
+    int ans = 0;
 
     for (int i = 0; i < nums.size(); i++)
     {
-        if(nums[i] == nums[i-1]){
+
+        if(freq == 0){
             ans = nums[i];
+            
+        }
+
+        if (ans == nums[i])
+        {
             freq++;
+            
+            
         }
         else{
+            freq--;
             
-            freq = 1;
         }
 
-        if(freq > (nums.size()) / 2){
-            cout << ans << endl;
-            break;
-        }
     }
-    
-
+    cout  << endl;
+    cout << ans << endl;
 
 
     
